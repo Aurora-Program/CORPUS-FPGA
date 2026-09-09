@@ -1,0 +1,5 @@
+PASS relational vectors: 63232
+- tests/tb_step.sv:30: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 63us; walltime 0.050 s; speed 1.252 ms/s
+- Verilator: cpu 0.050 s on 1 threads; allocated 6 MB

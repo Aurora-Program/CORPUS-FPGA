@@ -1,0 +1,1528 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68 (git sha1 38e001a6f, Release, Clang /workspace/YoWASP/yosys/wasi-sdk-33.0-x86_64-linux/share/cmake/../..//bin/clang++ 22.1.0)
+
+-- Running command `read_verilog rtl/trigate_step.v rtl/trigate_core.v; synth_gowin -family gw1n -top trigate_core -noiopads -json build/trigate_gowin.json; check -assert; stat' --
+
+1. Executing Verilog-2005 frontend: rtl/trigate_step.v
+Parsing Verilog input from `rtl/trigate_step.v' to AST representation.
+Generating RTLIL representation for module `\trigate_step'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/trigate_core.v
+Parsing Verilog input from `rtl/trigate_core.v' to AST representation.
+Generating RTLIL representation for module `\trigate_core'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH_GOWIN pass.
+
+3.1. Executing Verilog-2005 frontend: /share/gowin/cells_sim.v
+Parsing Verilog input from `/share/gowin/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\__APICULA_LUT5'.
+Generating RTLIL representation for module `\__APICULA_LUT6'.
+Generating RTLIL representation for module `\__APICULA_LUT7'.
+Generating RTLIL representation for module `\__APICULA_LUT8'.
+Generating RTLIL representation for module `\MUX2'.
+Generating RTLIL representation for module `\MUX2_LUT5'.
+Generating RTLIL representation for module `\MUX2_LUT6'.
+Generating RTLIL representation for module `\MUX2_LUT7'.
+Generating RTLIL representation for module `\MUX2_LUT8'.
+Generating RTLIL representation for module `\DFF'.
+Generating RTLIL representation for module `\DFFE'.
+Generating RTLIL representation for module `\DFFS'.
+Generating RTLIL representation for module `\DFFSE'.
+Generating RTLIL representation for module `\DFFR'.
+Generating RTLIL representation for module `\DFFRE'.
+Generating RTLIL representation for module `\DFFP'.
+Generating RTLIL representation for module `\DFFPE'.
+Generating RTLIL representation for module `\DFFC'.
+Generating RTLIL representation for module `\DFFCE'.
+Generating RTLIL representation for module `\DFFN'.
+Generating RTLIL representation for module `\DFFNE'.
+Generating RTLIL representation for module `\DFFNS'.
+Generating RTLIL representation for module `\DFFNSE'.
+Generating RTLIL representation for module `\DFFNR'.
+Generating RTLIL representation for module `\DFFNRE'.
+Generating RTLIL representation for module `\DFFNP'.
+Generating RTLIL representation for module `\DFFNPE'.
+Generating RTLIL representation for module `\DFFNC'.
+Generating RTLIL representation for module `\DFFNCE'.
+Generating RTLIL representation for module `\DL'.
+Generating RTLIL representation for module `\DLN'.
+Generating RTLIL representation for module `\DLE'.
+Generating RTLIL representation for module `\DLNE'.
+Generating RTLIL representation for module `\DLC'.
+Generating RTLIL representation for module `\DLCE'.
+Generating RTLIL representation for module `\DLNC'.
+Generating RTLIL representation for module `\DLNCE'.
+Generating RTLIL representation for module `\DLP'.
+Generating RTLIL representation for module `\DLPE'.
+Generating RTLIL representation for module `\DLNP'.
+Generating RTLIL representation for module `\DLNPE'.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\TBUF'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\ELVDS_OBUF'.
+Generating RTLIL representation for module `\TLVDS_OBUF'.
+Generating RTLIL representation for module `\OSER4'.
+Generating RTLIL representation for module `\OSER4_MEM'.
+Generating RTLIL representation for module `\OSER8'.
+Generating RTLIL representation for module `\OSER10'.
+Generating RTLIL representation for module `\OVIDEO'.
+Generating RTLIL representation for module `\OSER16'.
+Generating RTLIL representation for module `\IDES4'.
+Generating RTLIL representation for module `\IDES4_MEM'.
+Generating RTLIL representation for module `\IDES8'.
+Generating RTLIL representation for module `\IDES10'.
+Generating RTLIL representation for module `\IVIDEO'.
+Generating RTLIL representation for module `\IDES16'.
+Generating RTLIL representation for module `\IDDR'.
+Generating RTLIL representation for module `\IDDRC'.
+Generating RTLIL representation for module `\DQS'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\ODDRC'.
+Generating RTLIL representation for module `\GSR'.
+Generating RTLIL representation for module `\BANDGAP'.
+Generating RTLIL representation for module `\ALU'.
+Generating RTLIL representation for module `\RAM16S1'.
+Generating RTLIL representation for module `\RAM16S2'.
+Generating RTLIL representation for module `\RAM16S4'.
+Generating RTLIL representation for module `\RAM16SDP1'.
+Generating RTLIL representation for module `\RAM16SDP2'.
+Generating RTLIL representation for module `\RAM16SDP4'.
+Generating RTLIL representation for module `\SP'.
+Generating RTLIL representation for module `\SPX9'.
+Generating RTLIL representation for module `\SDP'.
+Generating RTLIL representation for module `\SDPX9'.
+Generating RTLIL representation for module `\DP'.
+Generating RTLIL representation for module `\DPX9'.
+Generating RTLIL representation for module `\rPLL'.
+Generating RTLIL representation for module `\PLLVR'.
+Generating RTLIL representation for module `\OSC'.
+Generating RTLIL representation for module `\OSCZ'.
+Generating RTLIL representation for module `\OSCF'.
+Generating RTLIL representation for module `\OSCH'.
+Generating RTLIL representation for module `\OSCW'.
+Generating RTLIL representation for module `\OSCO'.
+Generating RTLIL representation for module `\EMCU'.
+Successfully finished Verilog frontend.
+
+3.2. Executing Verilog-2005 frontend: /share/gowin/cells_xtra_gw1n.v
+Parsing Verilog input from `/share/gowin/cells_xtra_gw1n.v' to AST representation.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT7'.
+Generating RTLIL representation for module `\LUT8'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\IODELAY'.
+Generating RTLIL representation for module `\IEM'.
+Generating RTLIL representation for module `\ROM16'.
+Generating RTLIL representation for module `\ROM'.
+Generating RTLIL representation for module `\ROMX9'.
+Generating RTLIL representation for module `\pROM'.
+Generating RTLIL representation for module `\pROMX9'.
+Generating RTLIL representation for module `\SDPB'.
+Generating RTLIL representation for module `\SDPX9B'.
+Generating RTLIL representation for module `\DPB'.
+Generating RTLIL representation for module `\DPX9B'.
+Generating RTLIL representation for module `\PADD18'.
+Generating RTLIL representation for module `\PADD9'.
+Generating RTLIL representation for module `\MULT9X9'.
+Generating RTLIL representation for module `\MULT18X18'.
+Generating RTLIL representation for module `\MULT36X36'.
+Generating RTLIL representation for module `\MULTALU36X18'.
+Generating RTLIL representation for module `\MULTADDALU18X18'.
+Generating RTLIL representation for module `\MULTALU18X18'.
+Generating RTLIL representation for module `\ALU54D'.
+Generating RTLIL representation for module `\BUFG'.
+Generating RTLIL representation for module `\BUFS'.
+Generating RTLIL representation for module `\PLL'.
+Generating RTLIL representation for module `\TLVDS_IBUF'.
+Generating RTLIL representation for module `\TLVDS_TBUF'.
+Generating RTLIL representation for module `\TLVDS_IOBUF'.
+Generating RTLIL representation for module `\ELVDS_IBUF'.
+Generating RTLIL representation for module `\ELVDS_TBUF'.
+Generating RTLIL representation for module `\ELVDS_IOBUF'.
+Generating RTLIL representation for module `\MIPI_IBUF'.
+Generating RTLIL representation for module `\MIPI_IBUF_HS'.
+Generating RTLIL representation for module `\MIPI_IBUF_LP'.
+Generating RTLIL representation for module `\MIPI_OBUF'.
+Generating RTLIL representation for module `\MIPI_OBUF_A'.
+Generating RTLIL representation for module `\ELVDS_IBUF_MIPI'.
+Generating RTLIL representation for module `\I3C_IOBUF'.
+Generating RTLIL representation for module `\CLKDIV'.
+Generating RTLIL representation for module `\DHCEN'.
+Generating RTLIL representation for module `\DLLDLY'.
+Generating RTLIL representation for module `\FLASH96K'.
+Generating RTLIL representation for module `\FLASH256K'.
+Generating RTLIL representation for module `\FLASH608K'.
+Generating RTLIL representation for module `\DCS'.
+Generating RTLIL representation for module `\DQCE'.
+Generating RTLIL representation for module `\CLKDIV2'.
+Generating RTLIL representation for module `\DHCENC'.
+Generating RTLIL representation for module `\FLASH64K'.
+Generating RTLIL representation for module `\FLASH64KZ'.
+Successfully finished Verilog frontend.
+
+3.3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.3.1. Analyzing design hierarchy..
+Top module:  \trigate_core
+Used module:     \trigate_step
+
+3.3.2. Analyzing design hierarchy..
+Top module:  \trigate_core
+Used module:     \trigate_step
+Removed 0 unused modules.
+Mapping positional arguments of cell trigate_core.step (trigate_step).
+
+3.4. Executing PROC pass (convert processes to netlists).
+
+3.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$rtl/trigate_core.v:23$358 in module trigate_core.
+Marked 35 switch rules as full_case in process $proc$rtl/trigate_step.v:22$10 in module trigate_step.
+Removed a total of 0 dead cases.
+
+3.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 39 assignments to connections.
+
+3.4.4. Executing PROC_INIT pass (extract init attributes).
+
+3.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~38 debug messages>
+
+3.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+     1/7: $0\response_direct[0:0]
+     2/7: $0\response_needs_base_refinement[0:0]
+     3/7: $0\response_support[7:0]
+     4/7: $0\response_areas[1:0]
+     5/7: $0\response_status[1:0]
+     6/7: $0\response_values[9:0]
+     7/7: $0\response_valid[0:0]
+Creating decoders for process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+     1/61: $5\status_o[1:0]
+     2/61: $9\values_o[1:0]
+     3/61: $8\values_o[3:0] [3:2]
+     4/61: $8\values_o[3:0] [1:0]
+     5/61: $4\values_o[9:0] [9:8]
+     6/61: $6\values_o[7:6]
+     7/61: $5\values_o[9:8]
+     8/61: $7\values_o[5:4]
+     9/61: $4\values_o[9:0] [5:4]
+    10/61: $4\values_o[9:0] [7:6]
+    11/61: $4\values_o[9:0] [3:0]
+    12/61: $4\status_o[1:0]
+    13/61: $3\values_o[9:0]
+    14/61: $3\needs_base_refinement_o[0:0]
+    15/61: $3\status_o[1:0]
+    16/61: $2\needs_base_refinement_o[0:0]
+    17/61: $2\status_o[1:0]
+    18/61: $2\values_o[9:0]
+    19/61: $1\status_o[1:0]
+    20/61: $1\needs_base_refinement_o[0:0]
+    21/61: $1\values_o[9:0]
+    22/61: $8\seen_zero[2:0]
+    23/61: $8\seen_one[2:0]
+    24/61: $8\support_o[7:7]
+    25/61: $8\match_candidate[0:0]
+    26/61: $7\seen_zero[2:0]
+    27/61: $7\seen_one[2:0]
+    28/61: $7\support_o[6:6]
+    29/61: $7\match_candidate[0:0]
+    30/61: $6\seen_zero[2:0]
+    31/61: $6\seen_one[2:0]
+    32/61: $6\support_o[5:5]
+    33/61: $6\match_candidate[0:0]
+    34/61: $5\seen_zero[2:0]
+    35/61: $5\seen_one[2:0]
+    36/61: $5\support_o[4:4]
+    37/61: $5\match_candidate[0:0]
+    38/61: $4\seen_zero[2:0]
+    39/61: $4\seen_one[2:0]
+    40/61: $4\support_o[3:3]
+    41/61: $4\match_candidate[0:0]
+    42/61: $3\seen_zero[2:0]
+    43/61: $3\seen_one[2:0]
+    44/61: $3\support_o[2:2]
+    45/61: $3\match_candidate[0:0]
+    46/61: $2\seen_zero[2:0]
+    47/61: $2\seen_one[2:0]
+    48/61: $2\support_o[1:1]
+    49/61: $2\match_candidate[0:0]
+    50/61: $1\seen_zero[2:0]
+    51/61: $1\seen_one[2:0]
+    52/61: $1\support_o[0:0]
+    53/61: $1\match_candidate[0:0]
+    54/61: $2\d[1:0]
+    55/61: $1\d[1:0]
+    56/61: $3\areas[31:0]
+    57/61: $2\areas[31:0]
+    58/61: $1\areas[31:0]
+    59/61: $3\opens[31:0]
+    60/61: $2\opens[31:0]
+    61/61: $1\opens[31:0]
+
+3.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\trigate_step.\a' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\b' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\i' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\values_o' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\status_o' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\areas_o' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\support_o' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\needs_base_refinement_o' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\m' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\r' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\e' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\d' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\base_open' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\match_candidate' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\cv' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\ca' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\cb' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\cm' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\seen_zero' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\seen_one' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\opens' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+No latch inferred for signal `\trigate_step.\areas' from process `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+
+3.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\trigate_core.\response_valid' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1080' with positive edge clock.
+Creating register for signal `\trigate_core.\response_values' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1081' with positive edge clock.
+Creating register for signal `\trigate_core.\response_status' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1082' with positive edge clock.
+Creating register for signal `\trigate_core.\response_areas' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1083' with positive edge clock.
+Creating register for signal `\trigate_core.\response_support' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1084' with positive edge clock.
+Creating register for signal `\trigate_core.\response_needs_base_refinement' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1085' with positive edge clock.
+Creating register for signal `\trigate_core.\response_direct' using process `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+  created $dff cell `$procdff$1086' with positive edge clock.
+
+3.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\trigate_core.$proc$rtl/trigate_core.v:23$358'.
+Removing empty process `trigate_core.$proc$rtl/trigate_core.v:23$358'.
+Found and cleaned up 35 empty switches in `\trigate_step.$proc$rtl/trigate_step.v:22$10'.
+Removing empty process `trigate_step.$proc$rtl/trigate_step.v:22$10'.
+Cleaned up 38 empty switches.
+
+3.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+Optimizing module trigate_step.
+<suppressed ~114 debug messages>
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module trigate_core...
+Checking module trigate_step...
+Found and reported 0 problems.
+
+3.6. Executing FLATTEN pass (flatten design).
+Deleting now unused module trigate_step.
+<suppressed ~1 debug messages>
+
+3.7. Executing TRIBUF pass.
+
+3.8. Executing DEMINOUT pass (demote inout ports to input or output).
+
+3.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 350 unused wires.
+<suppressed ~1 debug messages>
+
+3.11. Executing CHECK pass (checking for obvious problems).
+Checking module trigate_core...
+Found and reported 0 problems.
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 396 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 305 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 274 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 259 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 256 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+<suppressed ~420 debug messages>
+Removed a total of 140 cells.
+
+3.12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\step.$procmux$844.
+    dead port 1/2 on $mux $flatten\step.$procmux$841.
+    dead port 1/2 on $mux $flatten\step.$procmux$937.
+    dead port 2/2 on $mux $flatten\step.$procmux$838.
+    dead port 2/2 on $mux $flatten\step.$procmux$928.
+    dead port 1/2 on $mux $flatten\step.$procmux$922.
+    dead port 1/2 on $mux $flatten\step.$procmux$949.
+    dead port 2/2 on $mux $flatten\step.$procmux$919.
+    dead port 2/2 on $mux $flatten\step.$procmux$836.
+    dead port 2/2 on $mux $flatten\step.$procmux$851.
+    dead port 1/2 on $mux $flatten\step.$procmux$910.
+    dead port 1/2 on $mux $flatten\step.$procmux$931.
+    dead port 1/2 on $mux $flatten\step.$procmux$901.
+    dead port 1/2 on $mux $flatten\step.$procmux$913.
+    dead port 1/2 on $mux $flatten\step.$procmux$829.
+    dead port 1/2 on $mux $flatten\step.$procmux$904.
+    dead port 1/2 on $mux $flatten\step.$procmux$859.
+    dead port 1/2 on $mux $flatten\step.$procmux$856.
+    dead port 2/2 on $mux $flatten\step.$procmux$853.
+    dead port 1/2 on $mux $flatten\step.$procmux$943.
+    dead port 2/2 on $mux $flatten\step.$procmux$748.
+    dead port 1/2 on $mux $flatten\step.$procmux$751.
+    dead port 1/2 on $mux $flatten\step.$procmux$754.
+    dead port 1/2 on $mux $flatten\step.$procmux$761.
+    dead port 1/2 on $mux $flatten\step.$procmux$764.
+    dead port 2/2 on $mux $flatten\step.$procmux$766.
+    dead port 1/2 on $mux $flatten\step.$procmux$769.
+    dead port 1/2 on $mux $flatten\step.$procmux$772.
+    dead port 1/2 on $mux $flatten\step.$procmux$779.
+    dead port 2/2 on $mux $flatten\step.$procmux$781.
+    dead port 1/2 on $mux $flatten\step.$procmux$784.
+    dead port 1/2 on $mux $flatten\step.$procmux$787.
+    dead port 1/2 on $mux $flatten\step.$procmux$794.
+    dead port 2/2 on $mux $flatten\step.$procmux$796.
+    dead port 1/2 on $mux $flatten\step.$procmux$799.
+    dead port 1/2 on $mux $flatten\step.$procmux$802.
+    dead port 2/2 on $mux $flatten\step.$procmux$821.
+    dead port 2/2 on $mux $flatten\step.$procmux$823.
+    dead port 1/2 on $mux $flatten\step.$procmux$826.
+Removed 39 multiplexer ports.
+<suppressed ~268 debug messages>
+
+3.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 217 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 179 unused wires.
+<suppressed ~1 debug messages>
+
+3.12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~267 debug messages>
+
+3.12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 217 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.12.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.12.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.13. Executing FSM pass (extract and optimize FSM).
+
+3.13.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking trigate_core.response_support as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+Not marking trigate_core.response_status as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+
+3.13.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.13.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.13.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.13.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.13.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.13.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.13.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.14. Executing OPT pass (performing simple optimizations).
+
+3.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 217 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~267 debug messages>
+
+3.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 217 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1080 ($dff) from module trigate_core (D = $procmux$739_Y, Q = \response_valid, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$1096 ($sdff) from module trigate_core (D = \request_valid, Q = \response_valid).
+Adding SRST signal on $procdff$1081 ($dff) from module trigate_core (D = $procmux$734_Y, Q = \response_values, rval = 10'0101010101).
+Adding EN signal on $auto$ff.cc:337:slice$1098 ($sdff) from module trigate_core (D = { \values [9:2] \step.values_o [1:0] }, Q = \response_values).
+Adding SRST signal on $procdff$1082 ($dff) from module trigate_core (D = $procmux$727_Y, Q = \response_status, rval = 2'00).
+Adding EN signal on $auto$ff.cc:337:slice$1102 ($sdff) from module trigate_core (D = \status, Q = \response_status).
+Adding SRST signal on $procdff$1083 ($dff) from module trigate_core (D = $procmux$720_Y, Q = \response_areas, rval = 2'11).
+Adding EN signal on $auto$ff.cc:337:slice$1106 ($sdff) from module trigate_core (D = \step.areas [1:0], Q = \response_areas).
+Adding SRST signal on $procdff$1084 ($dff) from module trigate_core (D = $procmux$713_Y, Q = \response_support, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:337:slice$1110 ($sdff) from module trigate_core (D = \support, Q = \response_support).
+Adding SRST signal on $procdff$1085 ($dff) from module trigate_core (D = $procmux$706_Y, Q = \response_needs_base_refinement, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$1114 ($sdff) from module trigate_core (D = \needs_base, Q = \response_needs_base_refinement).
+Adding SRST signal on $procdff$1086 ($dff) from module trigate_core (D = $procmux$699_Y, Q = \response_direct, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$1118 ($sdff) from module trigate_core (D = \direct, Q = \response_direct).
+
+3.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 20 unused cells and 20 unused wires.
+<suppressed ~21 debug messages>
+
+3.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~204 debug messages>
+
+3.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 203 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 198 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+3.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+3.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.14.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.14.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~204 debug messages>
+
+3.14.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.14.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 198 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.14.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.14.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.14.23. Finished fast OPT passes. (There is nothing left to do.)
+
+3.15. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from mux cell trigate_core.$flatten\step.$procmux$746 ($mux).
+Removed top 30 bits (of 32) from mux cell trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:82$352 ($mux).
+Removed top 30 bits (of 32) from mux cell trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:80$345 ($mux).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$ne$rtl/trigate_step.v:79$340 ($ne).
+Removed top 30 bits (of 32) from mux cell trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:78$338 ($mux).
+Removed top 30 bits (of 32) from mux cell trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:76$334 ($mux).
+Removed top 30 bits (of 32) from mux cell trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:74$330 ($mux).
+Removed top 30 bits (of 32) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:71$326 ($eq).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:69$325 ($eq).
+Removed top 31 bits (of 32) from mux cell trigate_core.$flatten\step.$procmux$1078 ($mux).
+Removed top 1 bits (of 2) from mux cell trigate_core.$flatten\step.$procmux$1060 ($mux).
+Removed top 31 bits (of 32) from mux cell trigate_core.$flatten\step.$procmux$1069 ($mux).
+Removed top 2 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$1036 ($mux).
+Removed top 1 bits (of 2) from mux cell trigate_core.$flatten\step.$procmux$898 ($mux).
+Removed top 1 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$1024 ($mux).
+Removed top 1 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$1012 ($mux).
+Removed top 1 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$997 ($mux).
+Removed top 2 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$973 ($mux).
+Removed top 1 bits (of 3) from mux cell trigate_core.$flatten\step.$procmux$985 ($mux).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$ne$rtl/trigate_step.v:58$96 ($ne).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$ne$rtl/trigate_step.v:58$95 ($ne).
+Removed top 30 bits (of 32) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:40$52 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:40$51 ($eq).
+Removed top 30 bits (of 32) from port A of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Removed top 30 bits (of 32) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Converting cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add) from signed to unsigned.
+Removed top 29 bits (of 32) from port Y of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Removed top 1 bits (of 2) from port A of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Removed top 1 bits (of 3) from port Y of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:39$49 ($eq).
+Removed top 29 bits (of 32) from port B of cell trigate_core.$flatten\step.$ge$rtl/trigate_step.v:36$47 ($ge).
+Removed top 30 bits (of 32) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:35$46 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:35$45 ($eq).
+Removed top 30 bits (of 32) from port A of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Removed top 30 bits (of 32) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Converting cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add) from signed to unsigned.
+Removed top 29 bits (of 32) from port Y of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Removed top 1 bits (of 2) from port A of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Removed top 1 bits (of 3) from port Y of cell trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:34$43 ($eq).
+Removed top 1 bits (of 2) from port B of cell trigate_core.$flatten\step.$eq$rtl/trigate_step.v:33$41 ($eq).
+Removed top 2 bits (of 3) from wire trigate_core.$flatten\step.$2\seen_one[2:0].
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:80$345_Y.
+Removed top 1 bits (of 2) from wire trigate_core.$flatten\step.$1\d[1:0].
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$add$rtl/trigate_step.v:39$50_Y.
+Removed top 31 bits (of 32) from wire trigate_core.$flatten\step.$1\areas[31:0].
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$add$rtl/trigate_step.v:34$44_Y.
+Removed top 31 bits (of 32) from wire trigate_core.$flatten\step.$1\opens[31:0].
+Removed top 1 bits (of 2) from wire trigate_core.$flatten\step.$5\status_o[1:0].
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:78$338_Y.
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:76$334_Y.
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:82$352_Y.
+Removed top 30 bits (of 32) from wire trigate_core.$flatten\step.$ternary$rtl/trigate_step.v:74$330_Y.
+Removed top 1 bits (of 3) from wire trigate_core.$flatten\step.$4\seen_one[2:0].
+Removed top 1 bits (of 3) from wire trigate_core.$flatten\step.$3\seen_one[2:0].
+Removed top 1 bits (of 2) from wire trigate_core.$flatten\step.$4\status_o[1:0].
+
+3.16. Executing PEEPOPT pass (run peephole optimizers).
+
+3.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 15 unused wires.
+<suppressed ~1 debug messages>
+
+3.18. Executing SHARE pass (SAT-based resource sharing).
+
+3.19. Executing TECHMAP pass (map to technology primitives).
+
+3.19.1. Executing Verilog-2005 frontend: /share/mul2dsp.v
+Parsing Verilog input from `/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+3.19.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.20. Executing TECHMAP pass (map to technology primitives).
+
+3.20.1. Executing Verilog-2005 frontend: /share/mul2dsp.v
+Parsing Verilog input from `/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+3.20.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.21. Executing TECHMAP pass (map to technology primitives).
+
+3.21.1. Executing Verilog-2005 frontend: /share/mul2dsp.v
+Parsing Verilog input from `/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+3.21.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.22. Executing TECHMAP pass (map to technology primitives).
+
+3.22.1. Executing Verilog-2005 frontend: /share/mul2dsp.v
+Parsing Verilog input from `/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+3.22.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.23. Executing TECHMAP pass (map to technology primitives).
+
+3.23.1. Executing Verilog-2005 frontend: /share/gowin/dsp_map.v
+Parsing Verilog input from `/share/gowin/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `$__MUL9X9'.
+Generating RTLIL representation for module `$__MUL18X18'.
+Generating RTLIL representation for module `$__MUL36X36'.
+Successfully finished Verilog frontend.
+
+3.23.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+
+3.24. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module trigate_core:
+  creating $macc model for $flatten\step.$add$rtl/trigate_step.v:34$44 ($add).
+  creating $macc model for $flatten\step.$add$rtl/trigate_step.v:35$46 ($add).
+  creating $macc model for $flatten\step.$add$rtl/trigate_step.v:39$50 ($add).
+  creating $macc model for $flatten\step.$add$rtl/trigate_step.v:40$52 ($add).
+  creating $alu model for $macc $flatten\step.$add$rtl/trigate_step.v:40$52.
+  creating $alu model for $macc $flatten\step.$add$rtl/trigate_step.v:39$50.
+  creating $alu model for $macc $flatten\step.$add$rtl/trigate_step.v:35$46.
+  creating $alu model for $macc $flatten\step.$add$rtl/trigate_step.v:34$44.
+  creating $alu model for $flatten\step.$ge$rtl/trigate_step.v:36$47 ($ge): new $alu
+  creating $alu cell for $flatten\step.$ge$rtl/trigate_step.v:36$47: $auto$alumacc.cc:548:replace_alu$1138
+  creating $alu cell for $flatten\step.$add$rtl/trigate_step.v:34$44: $auto$alumacc.cc:548:replace_alu$1153
+  creating $alu cell for $flatten\step.$add$rtl/trigate_step.v:35$46: $auto$alumacc.cc:548:replace_alu$1156
+  creating $alu cell for $flatten\step.$add$rtl/trigate_step.v:39$50: $auto$alumacc.cc:548:replace_alu$1159
+  creating $alu cell for $flatten\step.$add$rtl/trigate_step.v:40$52: $auto$alumacc.cc:548:replace_alu$1162
+  created 5 $alu and 0 $macc cells.
+
+3.25. Executing OPT pass (performing simple optimizations).
+
+3.25.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.25.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 204 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.25.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~191 debug messages>
+
+3.25.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.25.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 204 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 203 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+3.25.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.25.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.25.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.25.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.25.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~186 debug messages>
+
+3.25.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.25.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 203 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.25.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.25.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.25.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.25.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.26. Executing MEMORY pass.
+
+3.26.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.26.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+3.26.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+3.26.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+3.26.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+3.26.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.26.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.26.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+3.26.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.26.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.28. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+3.29. Executing TECHMAP pass (map to technology primitives).
+
+3.29.1. Executing Verilog-2005 frontend: /share/gowin/lutrams_map.v
+Parsing Verilog input from `/share/gowin/lutrams_map.v' to AST representation.
+Generating RTLIL representation for module `$__GOWIN_LUTRAM_'.
+Successfully finished Verilog frontend.
+
+3.29.2. Executing Verilog-2005 frontend: /share/gowin/brams_map.v
+Parsing Verilog input from `/share/gowin/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__GOWIN_SP_'.
+Generating RTLIL representation for module `$__GOWIN_DP_'.
+Generating RTLIL representation for module `$__GOWIN_SDP_'.
+Successfully finished Verilog frontend.
+
+3.29.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+3.30. Executing OPT pass (performing simple optimizations).
+
+3.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+<suppressed ~25 debug messages>
+
+3.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 180 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.30.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.30.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+3.30.5. Finished fast OPT passes.
+
+3.31. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+3.32. Executing OPT pass (performing simple optimizations).
+
+3.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 180 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.32.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~152 debug messages>
+
+3.32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1033:
+      Old ports: A=$flatten\step.$1\seen_zero[2:0], B={ 2'11 $flatten\step.$1\seen_zero[2:0] [0] }, Y=$flatten\step.$2\seen_zero[2:0]
+      New ports: A=$flatten\step.$1\seen_zero[2:0] [2:1], B=2'11, Y=$flatten\step.$2\seen_zero[2:0] [2:1]
+      New connections: $flatten\step.$2\seen_zero[2:0] [0] = $flatten\step.$1\seen_zero[2:0] [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$926:
+      Old ports: A=2'10, B=2'00, Y=$flatten\step.$3\status_o[1:0]
+      New ports: A=1'1, B=1'0, Y=$flatten\step.$3\status_o[1:0] [1]
+      New connections: $flatten\step.$3\status_o[1:0] [0] = 1'0
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1045:
+      Old ports: A=3'000, B=3'111, Y=$flatten\step.$1\seen_zero[2:0]
+      New ports: A=1'0, B=1'1, Y=$flatten\step.$1\seen_zero[2:0] [0]
+      New connections: $flatten\step.$1\seen_zero[2:0] [2:1] = { $flatten\step.$1\seen_zero[2:0] [0] $flatten\step.$1\seen_zero[2:0] [0] }
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$985:
+      Old ports: A=$flatten\step.$5\seen_zero[2:0] [1:0], B={ 1'1 $flatten\step.$5\seen_zero[2:0] [0] }, Y={ \step.seen_zero [1] $flatten\step.$6\seen_zero[2:0] [0] }
+      New ports: A=$flatten\step.$5\seen_zero[2:0] [1], B=1'1, Y=\step.seen_zero [1]
+      New connections: $flatten\step.$6\seen_zero[2:0] [0] = $flatten\step.$5\seen_zero[2:0] [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1066:
+      Old ports: A={ 31'0000000000000000000000000000000 \step.base_open }, B={ 30'000000000000000000000000000000 $auto$wreduce.cc:514:run$1125 [1:0] }, Y=$flatten\step.$2\areas[31:0]
+      New ports: A={ 1'0 \step.base_open }, B=$auto$wreduce.cc:514:run$1125 [1:0], Y=$flatten\step.$2\areas[31:0] [1:0]
+      New connections: $flatten\step.$2\areas[31:0] [31:2] = 30'000000000000000000000000000000
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1075:
+      Old ports: A={ 31'0000000000000000000000000000000 $auto$wreduce.cc:514:run$1128 [0] }, B={ 30'000000000000000000000000000000 $auto$wreduce.cc:514:run$1127 [1:0] }, Y=$flatten\step.$2\opens[31:0]
+      New ports: A={ 1'0 $auto$wreduce.cc:514:run$1128 [0] }, B=$auto$wreduce.cc:514:run$1127 [1:0], Y=$flatten\step.$2\opens[31:0] [1:0]
+      New connections: $flatten\step.$2\opens[31:0] [31:2] = 30'000000000000000000000000000000
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$976:
+      Old ports: A=$flatten\step.$6\seen_one[2:0], B={ 2'11 $flatten\step.$6\seen_one[2:0] [0] }, Y=$flatten\step.$7\seen_one[2:0]
+      New ports: A=$flatten\step.$6\seen_one[2:0] [2:1], B=2'11, Y=$flatten\step.$7\seen_one[2:0] [2:1]
+      New connections: $flatten\step.$7\seen_one[2:0] [0] = $flatten\step.$6\seen_one[2:0] [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$ternary$rtl/trigate_step.v:74$330:
+      Old ports: A=2'00, B=2'11, Y=$auto$wreduce.cc:514:run$1133 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1133 [0]
+      New connections: $auto$wreduce.cc:514:run$1133 [1] = $auto$wreduce.cc:514:run$1133 [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$ternary$rtl/trigate_step.v:76$334:
+      Old ports: A=2'00, B=2'11, Y=$auto$wreduce.cc:514:run$1131 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1131 [0]
+      New connections: $auto$wreduce.cc:514:run$1131 [1] = $auto$wreduce.cc:514:run$1131 [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$ternary$rtl/trigate_step.v:78$338:
+      Old ports: A=2'00, B=2'11, Y=$auto$wreduce.cc:514:run$1130 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1130 [0]
+      New connections: $auto$wreduce.cc:514:run$1130 [1] = $auto$wreduce.cc:514:run$1130 [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1024:
+      Old ports: A={ 1'0 \support [1] }, B={ 1'1 \support [1] }, Y=$auto$wreduce.cc:514:run$1135 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1135 [1]
+      New connections: $auto$wreduce.cc:514:run$1135 [0] = \support [1]
+    Consolidated identical input bits for $mux cell $flatten\step.$ternary$rtl/trigate_step.v:80$345:
+      Old ports: A=2'00, B=2'11, Y=$auto$wreduce.cc:514:run$1123 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1123 [0]
+      New connections: $auto$wreduce.cc:514:run$1123 [1] = $auto$wreduce.cc:514:run$1123 [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$ternary$rtl/trigate_step.v:82$352:
+      Old ports: A=2'00, B=2'11, Y=$auto$wreduce.cc:514:run$1132 [1:0]
+      New ports: A=1'0, B=1'1, Y=$auto$wreduce.cc:514:run$1132 [0]
+      New connections: $auto$wreduce.cc:514:run$1132 [1] = $auto$wreduce.cc:514:run$1132 [0]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1021:
+      Old ports: A=$flatten\step.$2\seen_zero[2:0], B={ 1'1 $flatten\step.$2\seen_zero[2:0] [1] 1'1 }, Y=$flatten\step.$3\seen_zero[2:0]
+      New ports: A={ $flatten\step.$2\seen_zero[2:0] [2] $flatten\step.$2\seen_zero[2:0] [0] }, B=2'11, Y={ $flatten\step.$3\seen_zero[2:0] [2] $flatten\step.$3\seen_zero[2:0] [0] }
+      New connections: $flatten\step.$3\seen_zero[2:0] [1] = $flatten\step.$2\seen_zero[2:0] [1]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$988:
+      Old ports: A=$flatten\step.$5\seen_one[2:0], B={ 1'1 $flatten\step.$5\seen_one[2:0] [1] 1'1 }, Y=$flatten\step.$6\seen_one[2:0]
+      New ports: A={ $flatten\step.$5\seen_one[2:0] [2] $flatten\step.$5\seen_one[2:0] [0] }, B=2'11, Y={ $flatten\step.$6\seen_one[2:0] [2] $flatten\step.$6\seen_one[2:0] [0] }
+      New connections: $flatten\step.$6\seen_one[2:0] [1] = $flatten\step.$5\seen_one[2:0] [1]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1000:
+      Old ports: A={ 1'0 $auto$wreduce.cc:514:run$1134 [1:0] }, B={ 1'1 $auto$wreduce.cc:514:run$1134 [1:0] }, Y=$flatten\step.$5\seen_one[2:0]
+      New ports: A=1'0, B=1'1, Y=$flatten\step.$5\seen_one[2:0] [2]
+      New connections: $flatten\step.$5\seen_one[2:0] [1:0] = $auto$wreduce.cc:514:run$1134 [1:0]
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1009:
+      Old ports: A=$flatten\step.$3\seen_zero[2:0], B={ 1'1 $flatten\step.$3\seen_zero[2:0] [1:0] }, Y={ \step.seen_zero [2] $flatten\step.$4\seen_zero[2:0] [1:0] }
+      New ports: A=$flatten\step.$3\seen_zero[2:0] [2], B=1'1, Y=\step.seen_zero [2]
+      New connections: $flatten\step.$4\seen_zero[2:0] [1:0] = $flatten\step.$3\seen_zero[2:0] [1:0]
+  Optimizing cells in module \trigate_core.
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1033:
+      Old ports: A=$flatten\step.$1\seen_zero[2:0] [2:1], B=2'11, Y=$flatten\step.$2\seen_zero[2:0] [2:1]
+      New ports: A=$flatten\step.$1\seen_zero[2:0] [0], B=1'1, Y=$flatten\step.$2\seen_zero[2:0] [1]
+      New connections: $flatten\step.$2\seen_zero[2:0] [2] = $flatten\step.$2\seen_zero[2:0] [1]
+  Optimizing cells in module \trigate_core.
+Performed a total of 18 changes.
+
+3.32.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 180 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.32.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.32.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.32.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+<suppressed ~234 debug messages>
+
+3.32.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.32.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~119 debug messages>
+
+3.32.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1063:
+      Old ports: A={ 30'000000000000000000000000000000 $flatten\step.$2\areas[31:0] [1:0] }, B=$flatten\step.$add$rtl/trigate_step.v:40$52_Y, Y=\step.areas
+      New ports: A={ 1'0 $flatten\step.$2\areas[31:0] [1:0] }, B=$flatten\step.$add$rtl/trigate_step.v:40$52_Y [2:0], Y=\step.areas [2:0]
+      New connections: \step.areas [31:3] = 29'00000000000000000000000000000
+    Consolidated identical input bits for $mux cell $flatten\step.$procmux$1072:
+      Old ports: A={ 30'000000000000000000000000000000 $flatten\step.$2\opens[31:0] [1:0] }, B=$flatten\step.$add$rtl/trigate_step.v:35$46_Y, Y=\step.opens
+      New ports: A={ 1'0 $flatten\step.$2\opens[31:0] [1:0] }, B=$flatten\step.$add$rtl/trigate_step.v:35$46_Y [2:0], Y=\step.opens [2:0]
+      New connections: \step.opens [31:3] = 29'00000000000000000000000000000
+  Optimizing cells in module \trigate_core.
+Performed a total of 2 changes.
+
+3.32.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 180 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.32.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.32.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 58 unused wires.
+<suppressed ~1 debug messages>
+
+3.32.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+<suppressed ~1 debug messages>
+
+3.32.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.32.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~119 debug messages>
+
+3.32.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.32.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 180 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.32.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.32.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.32.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.32.23. Finished fast OPT passes. (There is nothing left to do.)
+
+3.33. Executing TECHMAP pass (map to technology primitives).
+
+3.33.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.33.2. Executing Verilog-2005 frontend: /share/gowin/arith_map.v
+Parsing Verilog input from `/share/gowin/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_gw1n_alu'.
+Successfully finished Verilog frontend.
+
+3.33.3. Continuing TECHMAP pass.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_80_gw1n_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$1d1e68f77481583066c6d429218f48ea9d5739b3\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod$d7a038003ecb5b49a9d52eb3e5397550d521ec05\_80_gw1n_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~530 debug messages>
+
+3.34. Executing OPT pass (performing simple optimizations).
+
+3.34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+<suppressed ~290 debug messages>
+
+3.34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 372 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 362 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Computing hashes of 359 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+<suppressed ~39 debug messages>
+Removed a total of 13 cells.
+
+3.34.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.34.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 6 unused cells and 261 unused wires.
+<suppressed ~7 debug messages>
+
+3.34.5. Finished fast OPT passes.
+
+3.35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.36. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+3.37. Executing TECHMAP pass (map to technology primitives).
+
+3.37.1. Executing Verilog-2005 frontend: /share/gowin/cells_map.v
+Parsing Verilog input from `/share/gowin/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+3.37.2. Continuing TECHMAP pass.
+Using template $_SDFFE_PP0P_ for cells of type $_SDFFE_PP0P_.
+Using template $_SDFFE_PP1P_ for cells of type $_SDFFE_PP1P_.
+No more expansions possible.
+<suppressed ~48 debug messages>
+
+3.38. Executing TECHMAP pass (map to technology primitives).
+
+3.38.1. Executing Verilog-2005 frontend: /share/gowin/cells_latch.v
+Parsing Verilog input from `/share/gowin/cells_latch.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_PP0_'.
+Generating RTLIL representation for module `$_DLATCH_NP0_'.
+Generating RTLIL representation for module `$_DLATCH_PP1_'.
+Generating RTLIL representation for module `$_DLATCH_NP1_'.
+Successfully finished Verilog frontend.
+
+3.38.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~8 debug messages>
+
+3.39. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.40. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+3.41. Executing SORT pass.
+
+3.42. Executing Verilog-2005 frontend: /share/abc9_model.v
+Parsing Verilog input from `/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+3.43. Executing ABC9 pass.
+
+3.43.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.3. Executing PROC pass (convert processes to netlists).
+
+3.43.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/share/gowin/cells_sim.v:1064$2436'.
+Cleaned up 1 empty switch.
+
+3.43.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.43.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 4 assignments to connections.
+
+3.43.3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.43.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.43.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.43.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/share/gowin/cells_sim.v:1064$2436'.
+
+3.43.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\C' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/share/gowin/cells_sim.v:1064$2436'.
+No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\S' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/share/gowin/cells_sim.v:1064$2436'.
+
+3.43.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.43.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.43.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/share/gowin/cells_sim.v:1064$2436'.
+Cleaned up 0 empty switches.
+
+3.43.4. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module trigate_core.
+Found 0 SCCs.
+
+3.43.5. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.6. Executing TECHMAP pass (map to technology primitives).
+
+3.43.6.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.43.6.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~230 debug messages>
+
+3.43.7. Executing OPT pass (performing simple optimizations).
+
+3.43.7.1. Executing OPT_EXPR pass (perform const folding).
+
+3.43.7.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+3.43.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+3.43.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+3.43.7.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+3.43.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.43.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+3.43.7.8. Executing OPT_EXPR pass (perform const folding).
+
+3.43.7.9. Finished fast OPT passes. (There is nothing left to do.)
+
+3.43.8. Executing TECHMAP pass (map to technology primitives).
+
+3.43.8.1. Executing Verilog-2005 frontend: /share/abc9_map.v
+Parsing Verilog input from `/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+3.43.8.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+3.43.9. Executing Verilog-2005 frontend: /share/abc9_model.v
+Parsing Verilog input from `/share/abc9_model.v' to AST representation.
+Replacing existing blackbox module `$__ABC9_DELAY' at /share/abc9_model.v:2.1-7.10.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Replacing existing blackbox module `$__ABC9_SCC_BREAKER' at /share/abc9_model.v:9.1-11.10.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Replacing existing module `$__DFF_N__$abc9_flop' at /share/abc9_model.v:14.1-20.10.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Replacing existing module `$__DFF_P__$abc9_flop' at /share/abc9_model.v:23.1-29.10.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+3.43.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~77 debug messages>
+
+3.43.11. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.12. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+3.43.13. Executing TECHMAP pass (map to technology primitives).
+
+3.43.13.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.43.13.2. Continuing TECHMAP pass.
+Using template $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010 for cells of type $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~239 debug messages>
+
+3.43.14. Executing OPT pass (performing simple optimizations).
+
+3.43.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.43.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 14 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.43.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.43.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.43.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 14 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.43.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.43.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~1 debug messages>
+
+3.43.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.43.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.43.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \trigate_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.43.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \trigate_core.
+Performed a total of 0 changes.
+
+3.43.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\trigate_core'.
+Computing hashes of 14 cells of `\trigate_core'.
+Finding duplicate cells in `\trigate_core'.
+Removed a total of 0 cells.
+
+3.43.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.43.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \trigate_core..
+
+3.43.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module trigate_core.
+
+3.43.14.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.43.15. Executing AIGMAP pass (map logic to AIG).
+Module trigate_core: replaced 5 cells with 35 new cells, skipped 9 cells.
+  replaced 2 cell types:
+       2 $_MUX_
+       3 $_XOR_
+  not replaced 2 cell types:
+       1 $_NOT_
+       8 $specify2
+
+3.43.16. Executing AIGMAP pass (map logic to AIG).
+Module trigate_core: replaced 189 cells with 1128 new cells, skipped 239 cells.
+  replaced 3 cell types:
+     105 $_MUX_
+      65 $_OR_
+      19 $_XOR_
+  not replaced 8 cell types:
+      43 $_AND_
+      58 $_NOT_
+       1 $scopeinfo
+       7 DFFSE
+      18 DFFRE
+      25 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000001001000000
+      50 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000111111
+      37 $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010
+
+3.43.16.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.16.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.16.3. Executing XAIGER backend.
+<suppressed ~36 debug messages>
+Extracted 480 AND gates and 1440 wires from module `trigate_core' to a netlist network with 47 inputs and 101 outputs.
+
+3.43.16.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+3.43.16.5. Executing ABC9.
+Running ABC command: "/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1

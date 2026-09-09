@@ -1,0 +1,5 @@
+PASS forward vectors: 256
+- tests/tb_forward.sv:26: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 256ns; walltime 0.000 s; speed 1.355 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB
