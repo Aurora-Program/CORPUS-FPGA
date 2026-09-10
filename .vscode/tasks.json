@@ -1,0 +1,123 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Tang Nano 9K with Gowin IDE",
+			"type": "shell",
+			"command": "C:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\bin\\gw_sh.exe",
+			"args": [
+				"-d",
+				"boards\\tang_nano_9k\\corpus.gprj",
+				"-run",
+				"all"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K with Gowin IDE",
+			"type": "shell",
+			"command": "C:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\bin\\gw_sh.exe",
+			"args": [
+				"-d",
+				"boards\\tang_nano_9k\\corpus.gprj",
+				"-run",
+				"all"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K with Gowin IDE",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/d",
+				"/c",
+				"call C:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\bin\\gw_sh.exe -d boards\\tang_nano_9k\\corpus.gprj -run all"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Gowin Education",
+			"type": "shell",
+			"command": "cmd.exe /d /c \"call C:\\Gowin\\Gowin_V1.9.12.03_x64\\IDE\\bin\\gw_sh.exe -d boards\\tang_nano_9k\\corpus.gprj -run all\"",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Education 1.9.11",
+			"type": "shell",
+			"command": "cmd.exe /d /c \"call C:\\Gowin\\Gowin_V1.9.11.03_Education_x64\\IDE\\bin\\gw_sh.exe -d boards\\tang_nano_9k\\corpus.gprj -run all\"",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Education Tcl",
+			"type": "shell",
+			"command": "cmd.exe /d /c \"cd /d boards\\tang_nano_9k && call C:\\Gowin\\Gowin_V1.9.11.03_Education_x64\\IDE\\bin\\gw_sh.exe build_gowin.tcl\"",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Education Tcl PS",
+			"type": "shell",
+			"command": "Set-Location boards\\tang_nano_9k; & 'C:\\Gowin\\Gowin_V1.9.11.03_Education_x64\\IDE\\bin\\gw_sh.exe' 'build_gowin.tcl'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Education Final",
+			"type": "shell",
+			"command": "Set-Location boards\\tang_nano_9k; & 'C:\\Gowin\\Gowin_V1.9.11.03_Education_x64\\IDE\\bin\\gw_sh.exe' 'build_gowin.tcl'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Tang Nano 9K Education Clean",
+			"type": "shell",
+			"command": "Set-Location boards\\tang_nano_9k; & 'C:\\Gowin\\Gowin_V1.9.11.03_Education_x64\\IDE\\bin\\gw_sh.exe' 'build_gowin.tcl'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Deploy Aurora to Tang Nano 9K",
+			"type": "shell",
+			"command": "cmd.exe /d /c \"call C:\\oss-cad-suite\\environment.bat & C:\\oss-cad-suite\\bin\\openFPGALoader.exe -b tangnano9k -f boards\\tang_nano_9k\\impl\\pnr\\corpus.fs\"",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Deploy Aurora to Tang Nano 9K Direct",
+			"type": "shell",
+			"command": "$env:PATH = 'C:\\oss-cad-suite\\bin;' + $env:PATH; & 'C:\\oss-cad-suite\\bin\\openFPGALoader.exe' '-b' 'tangnano9k' '-f' 'boards\\tang_nano_9k\\impl\\pnr\\corpus.fs'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Detect Tang Nano JTAG OSS CAD",
+			"type": "shell",
+			"command": "$root='C:\\oss-cad-suite'; $env:PATH=$root+'\\bin;'+$root+'\\lib;'+$env:PATH; $env:OPENFPGALOADER_SOJ_DIR=$root+'\\share\\openFPGALoader'; & ($root+'\\bin\\openFPGALoader.exe') '--detect' 2>&1; Write-Output ('loader_exit='+$LASTEXITCODE)",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Deploy Tang Nano 9K Bitstream",
+			"type": "shell",
+			"command": "Set-Location boards\\tang_nano_9k; & '.\\deploy_tang.bat'",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

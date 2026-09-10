@@ -1,0 +1,28 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\rtl\trigate_step.v'
+Analyzing Verilog file 'C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\rtl\trigate_core.v'
+Analyzing Verilog file 'C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\corpus_selftest_top.v'
+Compiling module 'corpus_selftest_top'("C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\corpus_selftest_top.v":3)
+Compiling module 'trigate_core'("C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\rtl\trigate_core.v":3)
+Compiling module 'trigate_step'("C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\rtl\trigate_step.v":3)
+NOTE  (EX0101) : Current top module is "corpus_selftest_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\impl\gwsynthesis\corpus.vg" completed
+[100%] Generate report file "C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\impl\gwsynthesis\corpus_syn.rpt.html" completed
+GowinSynthesis finish

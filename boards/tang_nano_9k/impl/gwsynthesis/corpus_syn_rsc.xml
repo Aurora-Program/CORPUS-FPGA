@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="corpus_selftest_top" Register="60" Alu="49" Lut="49" T_Register="70(60)" T_Alu="57(49)" T_Lut="63(49)">
+ <SubModule name="core" Register="10" T_Register="10(10)" T_Alu="8(0)" T_Lut="14(0)">
+  <SubModule name="step" Alu="8" Lut="14" T_Alu="8(8)" T_Lut="14(14)"/>
+ </SubModule>
+</Module>
