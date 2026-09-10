@@ -1,0 +1,20 @@
+{
+  "profile": "corpus-trigate-v141-strict-areas-1",
+  "board": "Tang Nano 9K",
+  "device": "GW1NR-LV9QN88PC6/I5",
+  "synthesis_family": "gw1n",
+  "reference_tests": "passed",
+  "semantic_states": 243,
+  "state_counts": {
+    "wait": 119,
+    "changed": 68,
+    "closed": 28,
+    "conflict": 28
+  },
+  "relational_vectors": 63232,
+  "forward_vectors": 256,
+  "rtl": "not_run",
+  "synthesis": "not_run",
+  "board_test": "not_run",
+  "full_aurora_conformance": "not_claimed"
+}

@@ -1,7 +1,7 @@
--d C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\impl\gwsynthesis\corpus.vg
+-d C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\impl\gwsynthesis\corpus_uart.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\corpus.cst
+-cst C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\corpus_uart.cst
 -cfg C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\impl\pnr\device.cfg
 -sdc C:\Users\p_m_a\Aurora\Corpus\CORPUS-FPGA-v0.1\CORPUS-FPGA-v0.1\boards\tang_nano_9k\corpus.sdc
 -bit

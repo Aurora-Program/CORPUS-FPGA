@@ -1,0 +1,14 @@
+test_all_completion_masks (test_reference.ReferenceTests.test_all_completion_masks) ... ok
+test_all_local_states_against_binary_truth_table (test_reference.ReferenceTests.test_all_local_states_against_binary_truth_table) ... ok
+test_book_examples (test_reference.ReferenceTests.test_book_examples) ... ok
+test_encoding_and_validation (test_reference.ReferenceTests.test_encoding_and_validation) ... ok
+test_fractal_sharing (test_reference.ReferenceTests.test_fractal_sharing) ... ok
+test_nonunique_constraint_survives_realization (test_reference.ReferenceTests.test_nonunique_constraint_survives_realization) ... ok
+test_residual_is_not_a_vote_or_orientation (test_reference.ReferenceTests.test_residual_is_not_a_vote_or_orientation) ... ok
+test_shared_events_and_isolated_branches (test_reference.ReferenceTests.test_shared_events_and_isolated_branches) ... ok
+test_strict_area_boundary_is_explicit (test_reference.ReferenceTests.test_strict_area_boundary_is_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.023s
+
+OK
