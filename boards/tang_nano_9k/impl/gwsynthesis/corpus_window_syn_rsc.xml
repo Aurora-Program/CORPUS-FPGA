@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="corpus_window_top" Register="178" Lut="137" T_Register="247(178)" T_Alu="44(0)" T_Lut="402(137)">
+ <SubModule name="rx_unit" Register="38" Lut="54" T_Register="38(38)" T_Lut="54(54)"/>
+ <SubModule name="tx_unit" Register="31" Alu="15" Lut="24" T_Register="31(31)" T_Alu="15(15)" T_Lut="24(24)"/>
+ <SubModule name="ds_gate" Alu="10" Lut="61" T_Alu="10(10)" T_Lut="61(61)"/>
+ <SubModule name="de_gate" Alu="10" Lut="56" T_Alu="10(10)" T_Lut="56(56)"/>
+ <SubModule name="do_gate" Alu="9" Lut="70" T_Alu="9(9)" T_Lut="70(70)"/>
+</Module>
