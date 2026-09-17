@@ -1,6 +1,6 @@
 # Validación de la entrega
 
-Ejecución: 9 de septiembre de 2026. Perfil
+Ejecución: 11 de septiembre de 2026. Perfil
 `corpus-trigate-v141-strict-areas-1`.
 
 Placa de esta entrega: **Tang Nano 9K**, GW1NR-LV9QN88PC6/I5.
@@ -20,12 +20,33 @@ Pines de reloj y LED verificados con el ejemplo oficial de Sipeed.
 | C existente, sin cambios | 23.902 comprobaciones del repositorio base | Superada |
 | Place & Route y tiempos de placa | No ejecutados | Pendiente |
 | Prueba física | No ejecutada | Pendiente |
+| Piloto FPGA de ventana A6/5B | 256 consultas, 13 posiciones, DS/DE/DO, estados y áreas | Superada: 256/256 coincidencias en Tang Nano 9K por COM5 |
+| FractalTensor FPGA completo | 39 trits, ramas, Carry y Dictionary | Fuera del piloto |
 | Aurora completo | Fuera del alcance de este módulo | No se afirma conformidad |
 
 La referencia se comprobó con una tabla booleana independiente de ocho filas
 y ejemplos del documento. Comparar RTL y referencia verifica la traducción
 de este perfil; no elimina la tensión de activación descrita en PROFILE.md.
 Los resultados no evalúan comprensión, aprendizaje general ni inteligencia.
+
+## Piloto de ventana FPGA
+
+El piloto desplegado en la Tang Nano 9K no es todavía el FractalTensor completo.
+Implementa 13 posiciones empaquetadas, tres acciones fijas `DS -> DE -> DO`,
+tres rondas de propagación y la interfaz UART `A6/5B`. El orquestador C conserva
+las 39 posiciones, las ramas, `Carry`, la poda y el Dictionary.
+
+La prueba reproducible se ejecuta con:
+
+```powershell
+python host/compare_window_semantics.py --port COM5
+```
+
+Compara los 13 trits resultantes, los estados y las áreas de las tres acciones
+contra el modelo Python del piloto. La prueba de 256 consultas obtuvo 256/256
+coincidencias en la Tang Nano 9K conectada por `COM5`, incluyendo trits,
+estados, áreas y `needs`. No implica conformidad del FractalTensor de 39 trits
+ni del Aurora completo.
 
 ## Recursos mapeados
 

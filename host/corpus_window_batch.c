@@ -87,6 +87,7 @@ int main(int argc, char **argv) {
         }
         for (int i = 0; i < 8; ++i) printf("%02x%s", response[i], i == 7 ? "\n" : " ");
         fflush(stdout);
+        Sleep(5);
     }
     CloseHandle(port);
     return 0;

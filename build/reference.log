@@ -9,6 +9,6 @@ test_shared_events_and_isolated_branches (test_reference.ReferenceTests.test_sha
 test_strict_area_boundary_is_explicit (test_reference.ReferenceTests.test_strict_area_boundary_is_explicit) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.023s
+Ran 9 tests in 0.022s
 
 OK

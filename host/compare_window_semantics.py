@@ -46,10 +46,10 @@ def step(values: list[int], allowed: int) -> tuple[list[int], int, int, int]:
             and (values[3] == 2 or values[4] == 2 or
                  (majority ^ values[4]) == values[3])):
             support |= 1 << index
-    if not support:
-        return values[:], 3, 0, 0
     open_count = sum(value == 2 for value in values[:3])
     areas = int(open_count >= 2) + int(values[3] == 2) + int(values[4] == 2)
+    if not support:
+        return values[:], 3, areas, 0
     majority = 2
     if values[0] == values[1] and values[0] != 2:
         majority = values[0]
@@ -81,21 +81,33 @@ def step(values: list[int], allowed: int) -> tuple[list[int], int, int, int]:
 
 
 def model(request: list[int]) -> list[int]:
+    return model_details(request)[0]
+
+
+def model_details(request: list[int]) -> tuple[list[int], list[int], list[int], list[int]]:
     cells = []
     for byte in request[:4]:
         cells.extend(decode_byte(byte))
     cells = cells[:13]
+    statuses = []
+    areas = []
+    needs = []
     masks = request[4:7]
-    ds = [cells[0], cells[1], cells[2], cells[12], cells[11]]
-    result, _, _, _ = step(ds, masks[0])
-    cells[12], cells[11] = result[3], result[4]
-    de = [cells[3], cells[4], cells[5], cells[12], cells[11]]
-    result, _, _, _ = step(de, masks[1])
-    cells[12], cells[11] = result[3], result[4]
-    do = [cells[6], cells[7], cells[8], cells[12], cells[11]]
-    result, _, _, _ = step(do, masks[2])
-    cells[6], cells[7], cells[8], cells[12], cells[11] = result
-    return cells
+    for _ in range(3):
+        statuses = []
+        areas = []
+        needs = []
+        for positions in ((0, 1, 2, 12, 11), (3, 4, 5, 12, 11), (6, 7, 8, 12, 11)):
+            values = [cells[position] for position in positions]
+            result, status, area, need = step(values, masks[len(statuses)])
+            statuses.append(status)
+            areas.append(area)
+            needs.append(need)
+            if len(statuses) < 3:
+                cells[12], cells[11] = result[3], result[4]
+            else:
+                cells[6], cells[7], cells[8], cells[12], cells[11] = result
+    return cells, statuses, areas, needs
 
 
 def main() -> int:
@@ -103,7 +115,7 @@ def main() -> int:
     parser.add_argument("--port", default="COM5")
     args = parser.parse_args()
     cases = []
-    for index in range(64):
+    for index in range(256):
         cases.append([
             (0x3F ^ ((index * 0x15) & 0xFF)),
             (0x50 ^ ((index * 0x29) & 0xFF)),
@@ -124,9 +136,18 @@ def main() -> int:
         for byte in fields[1:5]:
             actual.extend(decode_byte(byte))
         actual = actual[:13]
-        expected = model(case)
-        if actual != expected:
-            failures.append(f"case={index} expected={expected} actual={actual}")
+        expected, expected_status, expected_areas, expected_needs = model_details(case)
+        actual_status = [fields[5] & 3, (fields[5] >> 2) & 3, (fields[5] >> 4) & 3]
+        actual_areas = [fields[6] & 3, (fields[6] >> 2) & 3, (fields[6] >> 4) & 3]
+        actual_needs = [fields[7] & 1, (fields[7] >> 1) & 1, (fields[7] >> 2) & 1]
+        if (actual != expected or actual_status != expected_status or
+            actual_areas != expected_areas or actual_needs != expected_needs):
+            failures.append(
+                f"case={index} trits_expected={expected} trits_actual={actual} "
+                f"status_expected={expected_status} status_actual={actual_status} "
+                f"areas_expected={expected_areas} areas_actual={actual_areas} "
+                f"needs_expected={expected_needs} needs_actual={actual_needs}"
+            )
     if result.returncode or len(responses) != len(cases) or failures:
         print("FAIL window semantic comparison")
         print("\n".join(failures) or f"responses={len(responses)}/{len(cases)}")

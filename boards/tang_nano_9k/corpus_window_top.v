@@ -89,7 +89,7 @@ module corpus_window_top #(parameter integer CLOCK_HZ = 27000000,
             do_needs_latched <= 0;
             activity <= 0;
         end else begin
-            if (rx_valid && !busy && !tx_pending) begin
+            if (rx_valid && !busy && !tx_pending && !tx_busy) begin
                 if (rx_count == 0) begin
                     if (rx_byte == 8'hA6) rx_count <= 1;
                 end else begin
