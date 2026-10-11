@@ -13,8 +13,24 @@
   },
   "relational_vectors": 63232,
   "forward_vectors": 256,
-  "rtl": "not_run",
-  "synthesis": "not_run",
+  "rtl": "passed",
+  "synthesis": "gowin_mapping_passed_no_place_and_route",
   "board_test": "not_run",
-  "full_aurora_conformance": "not_claimed"
+  "full_aurora_conformance": "not_claimed",
+  "board_simulation": "16_cases_passed",
+  "gowin_cell_counts": {
+    "LUT3": 15,
+    "LUT4": 65,
+    "LUT2": 32,
+    "DFFSE": 7,
+    "ALU": 4,
+    "MUX2_LUT5": 59,
+    "MUX2_LUT7": 9,
+    "MUX2_LUT6": 22,
+    "LUT1": 58,
+    "DFFRE": 18,
+    "MUX2_LUT8": 2,
+    "VCC": 1,
+    "GND": 1
+  }
 }

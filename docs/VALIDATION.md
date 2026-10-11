@@ -1,7 +1,7 @@
 # Validación de la entrega
 
-Ejecución: 11 de septiembre de 2026. Perfil
-`corpus-trigate-v141-strict-areas-1`.
+Ejecución: 11 de septiembre de 2026; revalidada el 7 de octubre de 2026
+(ver "Revalidación"). Perfil `corpus-trigate-v141-strict-areas-1`.
 
 Placa de esta entrega: **Tang Nano 9K**, GW1NR-LV9QN88PC6/I5.
 Pines de reloj y LED verificados con el ejemplo oficial de Sipeed.
@@ -47,6 +47,29 @@ contra el modelo Python del piloto. La prueba de 256 consultas obtuvo 256/256
 coincidencias en la Tang Nano 9K conectada por `COM5`, incluyendo trits,
 estados, áreas y `needs`. No implica conformidad del FractalTensor de 39 trits
 ni del Aurora completo.
+
+## Revalidación del 7 de octubre de 2026
+
+`python verify.py --rtl --synth` (Python 3.12, OSS CAD Suite con Icarus 13.0 y
+Yosys 0.44) superó los 10 tests Python, las simulaciones RTL (63.232 vectores,
+256 de evaluador directo, 1.024 solicitudes con presión de retorno y reinicio,
+16 casos de autoprueba) y la síntesis Gowin.
+
+Cambios necesarios por el entorno:
+
+- `C:\oss-cad-suite\lib` debe estar en `PATH`; sin él `iverilog` falla con
+  `0xC0000135`.
+- `tests/tb_core.sv`: los valores iniciales de las entradas ya no coinciden con
+  el primer vector, porque `always @*` no se evalúa en el tiempo 0 y la salida
+  quedaba en `x`. Es un artefacto del testbench, no del RTL.
+- `verify.py`: se retiró `-family gw1n` de `synth_gowin`, que Yosys 0.44 no
+  admite.
+
+Prueba física con `corpus_window.fs` cargado en la Tang Nano 9K: cinco
+ejecuciones consecutivas de `compare_window_semantics.py --port COM5` dieron
+256/256 coincidencias (1.280 consultas, sin discrepancias). Es estabilidad con
+la placa ya cargada, no un ciclo repetido de reprogramación. Place & Route y
+tiempos siguen sin medirse.
 
 ## Recursos mapeados
 

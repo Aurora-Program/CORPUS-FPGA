@@ -1,0 +1,2 @@
+PASS forward vectors: 256
+tests/tb_forward.sv:26: $finish called at 256000 (1ps)

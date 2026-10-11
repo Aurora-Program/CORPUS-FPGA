@@ -111,7 +111,7 @@ def main():
         if not yosys:
             raise RuntimeError('Install Yosys to synthesize the core')
         script = ('read_verilog rtl/trigate_step.v rtl/trigate_core.v; '
-                  'synth_gowin -family gw1n -top trigate_core -noiopads -json build/trigate_gowin.json; '
+                  'synth_gowin -top trigate_core -noiopads -json build/trigate_gowin.json; '
                   'check -assert; stat')
         synth_log = run([yosys, '-p', script])
         (BUILD / 'synthesis.log').write_text(synth_log)

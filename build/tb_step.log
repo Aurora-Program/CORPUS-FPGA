@@ -1,0 +1,2 @@
+PASS relational vectors: 63232
+tests/tb_step.sv:30: $finish called at 63232000 (1ps)

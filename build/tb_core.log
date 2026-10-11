@@ -1,0 +1,2 @@
+PASS clocked stream: 1024 requests, backpressure and reset
+tests/tb_core.sv:78: $finish called at 21146000 (1ps)

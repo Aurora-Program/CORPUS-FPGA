@@ -1,0 +1,2 @@
+PASS Tang Nano 9K selftest simulation: all 16 cases
+tests/tb_board.sv:15: $finish called at 2996000 (1ps)

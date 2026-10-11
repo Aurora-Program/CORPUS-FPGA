@@ -90,15 +90,7 @@
 		{
 			"label": "Deploy Aurora to Tang Nano 9K",
 			"type": "shell",
-			"command": "cmd.exe /d /c \"call C:\\oss-cad-suite\\environment.bat & C:\\oss-cad-suite\\bin\\openFPGALoader.exe -b tangnano9k -f boards\\tang_nano_9k\\impl\\pnr\\corpus.fs\"",
-			"args": [],
-			"isBackground": false,
-			"problemMatcher": []
-		},
-		{
-			"label": "Deploy Aurora to Tang Nano 9K Direct",
-			"type": "shell",
-			"command": "$env:PATH = 'C:\\oss-cad-suite\\bin;' + $env:PATH; & 'C:\\oss-cad-suite\\bin\\openFPGALoader.exe' '-b' 'tangnano9k' '-f' 'boards\\tang_nano_9k\\impl\\pnr\\corpus.fs'",
+			"command": "$root='C:\\oss-cad-suite'; $env:PATH=$root+'\\bin;'+$root+'\\lib;'+$env:PATH; $env:OPENFPGALOADER_SOJ_DIR=$root+'\\share\\openFPGALoader'; & ($root+'\\bin\\openFPGALoader.exe') '-b' 'tangnano9k' '-f' 'boards\\tang_nano_9k\\impl\\pnr\\corpus_window.fs' 2>&1; Write-Output ('loader_exit='+$LASTEXITCODE)",
 			"args": [],
 			"isBackground": false,
 			"problemMatcher": []

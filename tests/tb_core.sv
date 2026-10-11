@@ -3,8 +3,9 @@ module tb_core;
     reg clk = 0;
     always #5 clk = !clk;
     reg rst = 1, request_valid = 0, response_ready = 0;
-    reg [9:0] request_values = 0;
-    reg [7:0] request_allowed = 255;
+    // Initial values differ from vector 0 so always @* in the step fires at time 0.
+    reg [9:0] request_values = 10'h3ff;
+    reg [7:0] request_allowed = 0;
     wire request_ready, response_valid;
     wire [9:0] response_values;
     wire [1:0] response_status, response_areas;
